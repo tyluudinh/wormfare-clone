@@ -1,0 +1,23 @@
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/mixins';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list {
+  background-color: #27181b;
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
+
+  :last-child {
+    border: 0;
+  }
+
+  li {
+    border-bottom: 1px solid #5e3f2c;
+  }
+}

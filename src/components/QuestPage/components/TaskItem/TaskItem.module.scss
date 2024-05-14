@@ -1,0 +1,67 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 8px 8px 16px;
+  border-radius: 16px;
+  background-color: #27181b;
+  min-height: 65px;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.completed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #819d31;
+}
+
+.serialNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: #423034;
+  @extend %badge;
+  color: #ecd5b2;
+}
+
+.title {
+  @extend %title-2;
+  color: #ecd5b2;
+}
+
+.desc {
+  color: #aa9088;
+  @extend %body;
+}
+
+.checkMark,
+.icon {
+  width: 24px;
+  height: 24px;
+}

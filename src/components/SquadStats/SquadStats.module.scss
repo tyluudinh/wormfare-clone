@@ -1,0 +1,61 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 25px;
+  border-radius: 16px;
+  background: #27181b;
+  width: 100%;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+
+.numberOfPoints {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 147px;
+  max-width: 100%;
+}
+
+.numberOfPlayers {
+  display: grid;
+  grid-template-areas: 'icon number' 'icon lable';
+  grid-template-columns: 40px 1fr;
+  gap: 4px 8px;
+  width: 147px;
+  max-width: 100%;
+}
+
+.playersIcon {
+  flex: 0 0 auto;
+  grid-area: icon;
+}
+
+.label {
+  @extend %body;
+  color: #aa9088;
+  grid-area: lable;
+}
+
+.number {
+  @extend %title-2;
+  color: #ecd5b2;
+  grid-area: number;
+}
+
+.btn {
+  width: 100%;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 20px;
+}

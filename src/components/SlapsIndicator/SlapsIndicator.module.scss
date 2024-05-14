@@ -1,0 +1,83 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 130px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.img {
+  width: 218px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-height: 668px) {
+  .root {
+    width: 110px;
+  }
+
+  .img {
+    width: 168px;
+  }
+}
+
+.value {
+  z-index: 2;
+  @extend %h-2;
+}
+
+.label {
+  --stroke-width: 3px;
+  --stroke-offset: 1px;
+
+  @extend %label;
+  margin-top: -4px;
+  z-index: 2;
+}
+
+.default {
+  .img {
+    left: 46%;
+    transform: translateX(-50%);
+    bottom: -16px;
+    z-index: 1;
+  }
+}
+
+.multiSlap {
+  .img {
+    left: 44%;
+    bottom: -23px;
+  }
+}
+
+.floppyFish {
+  .img {
+    left: 10px;
+  }
+}
+
+.iceBucket {
+  .img {
+    right: 10px;
+  }
+
+  .label {
+    margin-bottom: 25px;
+  }
+}
+
+.handCream {
+  .img {
+    left: 0;
+  }
+}

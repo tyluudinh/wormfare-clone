@@ -1,0 +1,19 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #423034;
+  transition: all 0.4s ease-in-out;
+}
+
+.img {
+  width: 24px;
+  height: 24px;
+  transition: all 0.4s ease-in-out;
+}

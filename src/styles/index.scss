@@ -1,0 +1,52 @@
+@use 'typography';
+@use 'reset';
+@use 'mixins';
+@use 'colors';
+@use 'media';
+@use 'fonts';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-troika: 'Troika', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: var(--deep-brown);
+  scroll-behavior: smooth;
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  flex-grow: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.touch-action {
+  touch-action: none;
+}

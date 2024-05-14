@@ -1,0 +1,17 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  @extend %value;
+  color: #aa9088;
+}
+
+.digits {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25px;
+}

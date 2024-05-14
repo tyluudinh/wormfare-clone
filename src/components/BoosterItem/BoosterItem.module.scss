@@ -1,0 +1,51 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #27181b;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  @extend %title;
+  color: #ecd5b2;
+  margin-bottom: 4px;
+}
+
+.desc {
+  color: #aa9088;
+  @extend %body;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.root svg {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.icon {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.available,
+.level {
+  @extend %body;
+  color: #aa9088;
+}

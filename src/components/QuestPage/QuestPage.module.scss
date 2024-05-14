@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+.listWrap {
+  margin-top: 32px;
+}
+
+.list {
+  gap: 32px;
+}

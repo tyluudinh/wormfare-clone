@@ -1,0 +1,43 @@
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/mixins';
+
+.root {
+  @include max-width;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.wrap {
+  @include side-paddings;
+  @include max-width;
+  padding-bottom: 32px;
+  padding-top: 16px;
+}
+
+.title {
+  @include h-1;
+  margin: 32px 0;
+  color: #ecd5b2;
+}
+
+.tabs {
+  margin-bottom: 16px;
+}
+
+.list {
+  background-color: #27181b;
+  border-radius: 0 0 16px 16px;
+  overflow: hidden;
+
+  :last-child {
+    border: 0;
+  }
+
+  li {
+    border-bottom: 1px solid #423034;
+  }
+}

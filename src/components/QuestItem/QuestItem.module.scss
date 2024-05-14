@@ -1,0 +1,43 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #27181b;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  @extend %title;
+  color: #ecd5b2;
+  margin-bottom: 4px;
+}
+
+.badge {
+  margin-bottom: 8px;
+}
+
+.desc {
+  color: #aa9088;
+  @extend %body;
+}
+
+.iconWrap {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.icon {
+  height: 70px;
+}

@@ -1,0 +1,28 @@
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/mixins';
+
+.root {
+  @include h-1;
+  animation: disappear 1s ease-out forwards;
+  position: absolute;
+  pointer-events: none;
+  color: #ffeed4;
+  touch-action: none !important;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-260px) scale(1.2);
+  }
+}

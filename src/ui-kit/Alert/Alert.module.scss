@@ -1,0 +1,21 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #423034;
+  gap: 6px;
+}
+
+.icon {
+  width: 19px;
+  height: 20px;
+}
+
+.msg {
+  @extend %alert;
+  color: #ecd5b2;
+}

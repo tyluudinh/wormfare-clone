@@ -1,0 +1,30 @@
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/mixins';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  align-items: center;
+  transform: translateX(-4px);
+}
+
+.coins {
+  @include h-1;
+  color: #ecd5b2;
+}
+
+.img {
+  width: 52px;
+}
+
+@media (max-height: 668px) {
+  .img {
+    width: 38px;
+  }
+
+  .coins {
+    @include h-2;
+  }
+}

@@ -1,0 +1,42 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 12px 16px;
+  gap: 8px;
+  background-color: #27181b;
+}
+
+.logo {
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.name {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @extend %title-3;
+  color: #ecd5b2;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @extend %body;
+  color: #ecd5b2;
+  min-width: 32px;
+}

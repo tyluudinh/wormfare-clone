@@ -1,0 +1,60 @@
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/mixins';
+
+.root {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: none !important;
+  -webkit-touch-callout: none;
+}
+
+.worm {
+  position: relative;
+  overflow: hidden;
+  margin-left: -2%;
+  height: 50vh;
+  touch-action: none !important;
+}
+
+@media (max-height: 668px) {
+  .worm {
+    height: 45vh;
+  }
+}
+
+.tapArea {
+  touch-action: none !important;
+  position: absolute;
+  width: 75%;
+  height: 52%;
+  bottom: 12%;
+  z-index: 1;
+  right: 4%;
+}
+
+.cooldown {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+  touch-action: none !important;
+}
+
+.lock {
+  .worm {
+    opacity: 0.6;
+  }
+
+  .cooldown {
+    opacity: 1;
+  }
+}

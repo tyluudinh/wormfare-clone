@@ -1,0 +1,213 @@
+@mixin h-1 {
+  font-family: var(--font-troika);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.4px;
+}
+
+%h-1 {
+  @include h-1;
+}
+
+@mixin h-2 {
+  font-family: var(--font-troika);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+%h-2 {
+  @include h-2;
+}
+
+@mixin label {
+  font-family: var(--font-troika);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+%label {
+  @include label;
+}
+
+@mixin title {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+%title {
+  @include title;
+}
+
+@mixin title-1 {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+
+%title-1 {
+  @include title-1;
+}
+
+@mixin title-2 {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+%title-2 {
+  @include title-2;
+}
+
+@mixin title-3 {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+%title-3 {
+  @include title-3;
+}
+
+@mixin subtitle {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+%subtitle {
+  @include subtitle;
+}
+
+@mixin body {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+%body {
+  @include body;
+}
+
+@mixin alert {
+  font-family: var(--font-inter);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.38;
+}
+
+%alert {
+  @include alert;
+}
+
+@mixin button {
+  font-family: var(--font-troika);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.08px;
+}
+
+%button {
+  @include button;
+}
+
+@mixin badge {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+
+%badge {
+  @include badge;
+}
+
+@mixin badge-1 {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+
+%badge-1 {
+  @include badge-1;
+}
+
+@mixin tab {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+%tab {
+  @include tab;
+}
+
+@mixin tab-active {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+%tab-active {
+  @include tab-active;
+}
+
+@mixin value {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+%value {
+  @include value;
+}
+
+@mixin league {
+  font-family: var(--font-inter);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+%league {
+  @include league;
+}

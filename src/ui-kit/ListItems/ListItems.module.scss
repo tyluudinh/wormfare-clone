@@ -1,0 +1,21 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  @extend %title-3;
+  color: #ecd5b2;
+  margin-bottom: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  list-style: none;
+}

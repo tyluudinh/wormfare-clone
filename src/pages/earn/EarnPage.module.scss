@@ -1,0 +1,22 @@
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/mixins';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.userBalance {
+  margin-bottom: 32px;
+  margin-top: 18px;
+}
+
+.tabs {
+  margin-bottom: 32px;
+}
+
+.auction {
+  margin-bottom: 32px;
+}

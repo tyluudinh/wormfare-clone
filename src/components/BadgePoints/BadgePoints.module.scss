@@ -1,0 +1,81 @@
+@import '@app/styles/typography';
+
+.root {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  color: #ecd5b2;
+}
+
+.wofr,
+.unfilled {
+  background-color: transparent;
+  @extend %badge-1;
+}
+
+.default {
+  background-color: #d8604c;
+  padding: 0 8px;
+  border-radius: 1000px;
+  @extend %badge;
+}
+
+.inactive {
+  color: #aa9088;
+  background-color: #423034;
+  padding: 0 8px;
+  border-radius: 1000px;
+  @extend %badge;
+}
+
+.completed {
+  color: #ddf892;
+  background-color: #819d31;
+  padding: 0 8px;
+  border-radius: 1000px;
+  @extend %badge;
+}
+
+.small {
+  height: 24px;
+  gap: 4px;
+
+  .img {
+    flex: 0 0 auto;
+    width: 23px;
+    height: 19px;
+    object-fit: contain;
+  }
+}
+
+.large {
+  height: 54px;
+  gap: 11px;
+
+  .img {
+    flex: 0 0 auto;
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+  }
+
+  .value {
+    @extend %h-1;
+  }
+}
+
+.combined {
+  height: 54px;
+  gap: 11px;
+
+  .img {
+    flex: 0 0 auto;
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+  }
+
+  .value {
+    @extend %h-2;
+  }
+}

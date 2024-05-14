@@ -1,0 +1,26 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.title {
+  @extend %title;
+  color: #aa9088;
+  margin-bottom: 8px;
+}
+
+.badge {
+  margin-bottom: 16px;
+  align-self: center;
+}
+
+.link {
+  @extend %badge-1;
+  color: #9bff28;
+  text-decoration: underline;
+}

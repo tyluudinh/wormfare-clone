@@ -1,0 +1,81 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 25px;
+  border-radius: 16px;
+  background: #27181b;
+  width: 100%;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.numberOfPoints {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 147px;
+  max-width: 100%;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 70%;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 4px;
+}
+
+.playersIcon {
+  flex: 0 0 auto;
+  grid-area: icon;
+}
+
+.label {
+  @extend %title-3;
+  color: #aa9088;
+  grid-area: lable;
+}
+
+.number {
+  @extend %title-2;
+  color: #ecd5b2;
+  grid-area: number;
+}
+
+.placeInAuction {
+  color: #aa9088;
+  display: flex;
+  align-items: center;
+  height: 24px;
+}
+
+.rank {
+  @extend %value;
+}
+
+.rightBranch {
+  height: 24px;
+  transform: scale(-1, 1);
+  flex-shrink: 0;
+  margin-right: 11px;
+}
+
+.leftBranch {
+  height: 24px;
+  flex-shrink: 0;
+  margin-left: 11px;
+}

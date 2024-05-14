@@ -1,0 +1,19 @@
+@import '@app/styles/typography';
+
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 8px 16px;
+  height: 65px;
+  width: 65px;
+  border-radius: 16px;
+  background-color: #27181b;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

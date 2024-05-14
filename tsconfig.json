@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+
+
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "useDefineForClassFields": true,
+    "experimentalDecorators": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    /* Bundler mode */
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "typeRoots": [
+      "./src/types/global.d.ts"
+    ],
+
+    /* Linting */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@common/*": ["./src/common/*"],
+      "@app/*": ["./src/*"],
+      "@components": ["./src/components"],
+      "@services": ["./src/services"],
+      "@ui-kit": ["./src/ui-kit"],
+      "@utils": ["./src/utils"],
+      "@media/*": ["./src/assets/media/*"],
+      "@icons/*": ["./src/assets/icons/*"],
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

@@ -1,0 +1,39 @@
+@import '@app/styles/typography';
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #27181b;
+}
+
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.title {
+  @extend %title;
+  color: #ecd5b2;
+}
+
+.desc {
+  color: #aa9088;
+  @extend %badge-1;
+}
+
+.img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,55 @@
+.root {
+  position: absolute;
+  width: 87px;
+  height: 71px;
+  z-index: 100;
+  animation:
+    tilt-shaking 0.25s linear infinite,
+    fade 1s ease-in-out;
+}
+
+.area {
+  position: absolute;
+  width: 70%;
+  height: 30%;
+  background-color: #00f;
+  left: 20%;
+  top: 47%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

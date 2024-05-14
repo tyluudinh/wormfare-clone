@@ -1,0 +1,19 @@
+@import '@app/styles/typography';
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.title {
+  @extend %league;
+  color: #ecd5b2;
+}

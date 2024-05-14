@@ -1,0 +1,22 @@
+@import '@app/styles/media';
+@import '@app/styles/typography';
+@import '@app/styles/mixins';
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.list {
+  gap: 15px;
+}
+
+.userBalance {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.tabs {
+  margin-bottom: 40px;
+}
